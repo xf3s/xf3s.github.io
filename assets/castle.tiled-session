@@ -1,0 +1,42 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "castletiles.tmx",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "castletiles.tmx": {
+            "scale": 1.9456,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 217.67064144736838,
+                "y": 115.38856907894736
+            }
+        },
+        "castletiles.tmx#tiny-town-packed": {
+            "scaleInDock": 1.8605
+        }
+    },
+    "last.exportedFilePath": "/Users/chrisfranz/CMPM120/GalleryShooter/assets",
+    "last.imagePath": "/Users/chrisfranz/CMPM120/GalleryShooter/assets",
+    "map.height": 30,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 20,
+    "openFiles": [
+        "castletiles.tmx"
+    ],
+    "project": "castle.tiled-project",
+    "recentFiles": [
+        "castletiles.tmx"
+    ],
+    "tileset.embedInMap": true,
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
