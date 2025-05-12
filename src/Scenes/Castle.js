@@ -62,6 +62,8 @@ class Castle extends Phaser.Scene {
             this.bullets.addBullet(this.player.sprite.body.x, this.player.sprite.body.y, "player");
         })
 
+        // teehee
+
 
         
     }
