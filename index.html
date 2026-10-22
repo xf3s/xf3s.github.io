@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Chris "three" Franz</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>c3f — AI household</title>
+<meta name="description" content="I build and study a household of AI agents: several models on one machine, sharing rooms, schedules and sensors. Field notes from daily operation.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="c3f — AI household">
+<meta property="og:description" content="I build and study a household of AI agents: several models on one machine, sharing rooms, schedules and sensors. Field notes from daily operation.">
+<meta property="og:url" content="https://xf3s.github.io/">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Portfolio and process site work in progress</h1>
+
+<header>
+  <h1>c3f</h1>
+  <p class="lede">I build and study a household of AI agents &mdash; several models on one
+  machine, sharing rooms, a schedule, and a set of sensors. What follows is what I run
+  and what has broken.</p>
+</header>
+
+<hr>
+
+<section>
+  <h2>what it is</h2>
+  <p>Not a chatbot and not a pipeline. A <em>household</em>: each model runs under its own
+  unix account with its own memory, they share rooms where they talk to each other, a
+  scheduler wakes them on their own clocks, and a sensor line &mdash; tides, weather,
+  a heart-rate strap, the house&rsquo;s own health &mdash; is woven into context every turn.</p>
+  <p>It has been running daily since the summer of 2026, at roughly eighty scheduled jobs.
+  Operating it that long is the method: you cannot read this class of failure out of source.
+  You find it by living next to it and noticing that a green light hasn&rsquo;t changed in
+  a while.</p>
+</section>
+
+<hr>
+
+<section>
+  <h2>what I&rsquo;ve found</h2>
+  <p class="small">Each of these is a filed report with a reproduction, not an opinion.
+  The link goes to the report itself.</p>
+  <ul class="receipts">
+    <li>
+      <a href="https://github.com/NousResearch/hermes-agent/issues/68800#issuecomment-5650596883">The
+      quiet-not-off watcher</a> &mdash; a scheduled job whose off-switch is an internal date
+      gate reads <code>healthy</code> forever. Two live specimens, 781 and 1,768 silent fires.
+      <span class="note">Also filed: a detection set of five distinct mechanisms behind that
+      one symptom.</span>
+    </li>
+    <li>
+      <a href="https://github.com/NousResearch/hermes-agent/issues/678#issuecomment-5650597019">Forgetting
+      must leave a mark</a> &mdash; if a prune and a loss are indistinguishable in the record,
+      you cannot tell maintenance from damage. A design note on what a delete owes the ledger.
+    </li>
+    <li>
+      <a href="https://github.com/NousResearch/hermes-agent/issues/100401#issuecomment-5554562148">A
+      fire-claim heartbeat that deadlocks on its own run</a> &mdash; every job that runs longer
+      than a minute gets killed as &ldquo;interrupted by shutdown.&rdquo;
+    </li>
+    <li>
+      <a href="https://github.com/NousResearch/hermes-agent/issues/85043#issuecomment-5559034661">A
+      threat screen that blocks an entire persona file on one common English word</a> &mdash;
+      a false positive reproduced from a clean install.
+    </li>
+  </ul>
+</section>
+
+<hr>
+
+<section>
+  <h2>code</h2>
+  <ul class="links">
+    <li><a href="https://github.com/xf3s/hermes-agent">hermes-agent</a> &mdash; a fork; the
+    reports above are against upstream.</li>
+    <li><a href="https://github.com/anima-research/agent-framework/pull/163">agent-framework
+    #163</a> &mdash; explicit final-delivery receipts for published speech, so a silent drop
+    can&rsquo;t read as success.</li>
+    <li><a href="https://github.com/xf3s/postmark">postmark</a> &mdash; contributions to a
+    correspondence town built for AI residents.</li>
+  </ul>
+</section>
+
+<hr>
+
+<section>
+  <h2>elsewhere</h2>
+  <ul class="links">
+    <li><a href="https://github.com/xf3s">github</a> &mdash; the whole hand.</li>
+  </ul>
+  <p class="small">Correspondence: <a href="mailto:riss3v@gmail.com">riss3v@gmail.com</a></p>
+</section>
+
+<footer>
+  <p class="small">Hand-written HTML. No framework, no analytics, no fonts to fetch.</p>
+</footer>
+
 </body>
 </html>

@@ -1,7 +1,84 @@
-body {
-    background-color: #b4ff00;
-    color: #4e0202;
-    font-family: sans-serif;
-    text-align: left;
+:root{
+  --lime:#b4ff00;
+  --ink:#4e0202;
+  --dim:#6b1a1a;
 }
 
+html{ background:var(--lime); }
+
+body{
+  background:var(--lime);
+  color:var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height:1.55;
+  max-width:44rem;
+  margin:0 auto;
+  padding:3rem 1.25rem 5rem;
+  text-align:left;
+}
+
+h1{
+  font-size:1.9rem;
+  line-height:1.15;
+  margin:0 0 .5rem;
+  letter-spacing:-.01em;
+}
+
+h2{
+  font-size:.95rem;
+  text-transform:lowercase;
+  letter-spacing:.09em;
+  margin:0 0 .9rem;
+  padding-bottom:.3rem;
+  border-bottom:1px solid var(--ink);
+}
+
+p{ margin:0 0 1rem; }
+
+.lede{
+  font-size:1.1rem;
+  color:var(--dim);
+  margin-bottom:2rem;
+}
+
+hr{
+  border:0;
+  border-top:1px dashed var(--ink);
+  opacity:.45;
+  margin:2.25rem 0;
+}
+
+a{
+  color:var(--ink);
+  text-decoration:none;
+  border-bottom:1px solid var(--ink);
+}
+a:hover{
+  background:var(--ink);
+  color:var(--lime);
+  border-bottom-color:var(--ink);
+}
+
+ul{ padding-left:1.1rem; margin:0 0 1rem; }
+li{ margin-bottom:.85rem; }
+
+.receipts li{ margin-bottom:1.15rem; }
+
+code{
+  font-family:"Courier New",Courier,monospace;
+  font-size:.86em;
+  background:rgba(78,2,2,.10);
+  padding:.05em .3em;
+}
+
+.small{ font-size:.86rem; color:var(--dim); }
+.note{ display:block; font-size:.86rem; color:var(--dim); margin-top:.25rem; }
+.todo{ border-bottom:1px dotted var(--dim); font-style:italic; }
+
+footer{ margin-top:3rem; }
+footer .small{ font-size:.78rem; opacity:.7; }
+
+@media (prefers-color-scheme: dark){
+  html,body{ background:#0e1200; color:#c8f76a; }
+  :root{ --ink:#c8f76a; --dim:#9dc450; }
+}
